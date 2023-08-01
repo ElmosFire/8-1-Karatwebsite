@@ -1,0 +1,316 @@
+#kpic {
+  width: 550px;
+}
+
+.brand {
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+
+}
+
+#tot{
+  padding: 50px 120px;
+}
+
+.brandpix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+.brandpix p{
+  font-size: .7vw !important;
+}
+
+.brandtxt {
+  width: 500px;
+  margin-bottom: 115px;
+  margin-left: 30px;
+}
+
+
+.brandtxt p {
+  display: block;
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.brandtxt a {
+  padding: 12px 16px;
+  background-color: #fff;
+  color: #002c54;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 0.8vw;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.brandtxt i {
+  font-size: 0.6vw;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
+
+.brandtxt a:hover {
+  background-color: #002c54;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.brandtxt h3{
+  font-family: 500;
+}
+
+#partpix {
+  padding-left: 6rem;
+  padding-bottom: 20px;
+}
+
+#klogo {
+  padding-top: 60px;
+  margin-top: 10px;
+  margin-left: 95px;
+  margin-bottom: 0px;
+}
+
+
+#kelogo {
+  padding-top: 64px;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+#tzlogo {
+  padding-top: 70px;
+}
+
+#tclogo {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.9vw;
+  color: #002c54;
+}
+
+#cust{
+  padding-top: 80px;
+  width: 450px;
+}
+
+.brandsubtxt p{
+  font-size: .7vw;
+  font-weight: 400;
+}
+
+.brand-pics {
+  margin-top: 50px;
+}
+
+.brand-pics h4 {
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+.brand-pics span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: .7vw;
+}
+
+.prod-txt h4{
+  font-weight: 500;
+}
+
+.prod-pix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prod-pix img {
+  width: 150px;
+}
+
+.sheets {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 430px;
+}
+
+.sheets span {
+  color: #002c54;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.sheets ul {
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.sheets li{
+  font-size: .8vw;
+}
+
+.sheets a {
+  color: #002c54;
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: .77vw;
+}
+
+.sheets a:hover {
+  text-decoration: none;
+}
+
+/*Certs StyleSheet*/
+#certs-sec{
+  background-color: #fff;
+}
+#Cert{
+  background-color: #fff;
+}
+
+.cert-text{
+text-align: center;
+font-size: 0.9vw;
+}
+
+.cert-cont{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 25px;
+  font-weight: 300;
+  padding: 0 190px;
+}
+.bpi{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  margin: 0 50px;
+}
+
+.bpi p{
+  line-height: 1.8;
+  font-size: .7vw;
+}
+
+.bpi-pics{
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+#bpi-certs{
+  color: #fff;
+  background-color: #002c54;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.cert-lists-con{
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1921px){
+  .brandpix{
+    margin-top: 30px;
+  }
+
+  #kpic{
+    width: 650px;
+  }
+  #klogo{
+   
+      padding-top: 40px;
+      margin-top: 10px;
+      margin-left: 95px;
+      margin-bottom: 20px;
+  
+  }
+  .prod-pix img {
+    width: 180px;
+  }
+
+  .sheets{
+    padding: 0 600px;
+  }
+  
+}
+@media screen and (max-width: 1279px){
+  .brandpix p{
+    font-size: 16px!important;
+  }
+  .sheets{
+    padding: 0 150px;
+  }
+  .sheet-list span, .li{
+    font-size: 14px!important;
+  } 
+  .sheet-list a{
+    font-size: 14px!important;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .sheets {
+   
+    padding: 0 140px;
+  }
+  .brandpix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #klogo {
+    padding-left: 1rem;
+  }
+  .brandtxt p {
+    margin-left: 20px;
+    max-width: 450px;
+    font-size: 16px !important;
+  }
+  
+  .brandtxt a {
+    font-size: 16px;
+  }
+  
+  .brandtxt i {
+    font-size: 16px;
+  }
+  #cust{
+    margin-left: 20px;
+  }
+  .cert-text{
+    text-align: center;
+    font-size: 18px;
+    }
+    #Cert h3{
+      font-size: 40px;
+    }
+    .cert-cont p{
+      font-size: 20px;
+    }
+}

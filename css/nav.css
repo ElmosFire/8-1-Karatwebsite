@@ -1,0 +1,473 @@
+.navbar {
+  background: linear-gradient(to right, #003CA6, #7C9CD4);
+    position: fixed;
+    width: 100%;
+    padding: 0px 0;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s linear;
+  }
+
+
+  .inner-width {
+    width: 100%;
+    margin: auto;
+    padding: 0 150px;
+   
+  }
+  
+  .navbar .inner-width {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 500px;
+    height: 75px;
+    background-image: url(../images/Karat\ by\ Lollicup_Logo\ White_870\ x\ 450.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index:9999;
+  }
+  
+  .menu-toggle {
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: 0.3s linear;
+  }
+  
+  .navbar-menu a, .navbar-menu button{
+    font-weight: 400;
+    color:#fff;
+    font-size: 16px;
+    margin-left: 30px;
+    transition: 0.2s linear;
+  }
+  
+  .navbar-menu a:hover, .navbar-menu button:hover  {
+    opacity: 50% !important;
+  }
+  
+  .sticky {
+    background: linear-gradient(to right, #003CA6, #7C9CD4);
+    padding: 18px 0;
+  }
+  
+  .sticky .logo {
+    background-image: url(../images/Karat\ by\ Lollicup_Logo\ White_870\ x\ 450.png);
+  }
+  
+  .sticky .navbar-menu a .dropdown-content {
+    color: #fff;
+  }
+
+  .sticky .navbar-menu i {
+    color: #fff;
+  }
+  
+  .sticky .menu-toggle span {
+    background-color: #fff;
+  }
+  
+
+  
+  .dropdown {
+    display: inline-block; 
+    padding-bottom: 5px;
+  }
+
+   /* Dropdown Button */
+   .dropbtn {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    top: 0;
+  }
+
+  .arrow {
+    position: relative;
+    left: .3em;
+    bottom: 4px;
+    border: 1px solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    color: #002c54;
+    min-width: 50px;
+    z-index: 1;
+    margin-top: 5px;
+  }
+  
+  .dropdown-content a {
+    background-color: #fff;
+    color: #002c54;
+    display: block;
+    font-weight: 400; 
+    padding: 12px 16px;
+    box-shadow: 2px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a:hover {
+    background-color: #002c54;
+    color: #fff; 
+    opacity: 100% !important;
+  }  
+
+.trademark { /*For registered trademarks on the nav bar.*/
+font-size: 70%;
+position: relative;
+bottom: 3px;
+}
+
+.trademark1 { /*For registered trademarks on the sales flyer/spec sheet pages.*/
+  font-size: 40%;
+  position: relative;
+  bottom: 6px;
+  }
+
+  .trademark2 { /*For registered trademarks on the tea zone posters page.*/
+      font-size: 50%;
+      position: relative;
+      bottom: 18px;
+      }
+
+      #trade2{
+        color: #002c54;
+        opacity: 100% !important;
+        font-size: 40%;
+        position: relative;
+        bottom: 25px;
+      }
+
+.trademark3 { /*For registered trademarks on careers page. */
+  font-size: 70% !important;
+  position: relative;
+  bottom: 6px;
+  }
+  .trademark4 { /*For registered trademarks on careers page. */
+    position: relative;
+    bottom: 16px;
+    }
+
+/*GO TO TOP*/
+  .goTop {
+    position: fixed;
+    z-index: 999;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #003CA6;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    display: none;
+  }
+
+  /*FOOTER*/
+  footer {
+    background-color: #15253d;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+  
+.footer-pic{
+  float: left;
+  margin-top: 50px;
+}
+
+  .bob {
+    float: right;
+    width: 20%;
+  }
+
+  .sites-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 40px;
+    padding-left: 50px;
+  }
+  .sites{
+    position: relative;
+    top: 38px;
+    margin-right: 100px;
+  }
+
+  .sites span{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 100%;
+    text-decoration: underline;
+  }
+
+  .sites ul{
+    list-style: none;
+    line-height: 1.9;
+  }
+
+  .sites a{
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .sites a:hover{
+    text-decoration: underline;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+
+  .sm{
+   display: flex;
+   justify-content: center;
+   margin-right: 30px;
+  }
+  
+  .sm a {
+    color: #fff;
+    padding: 0 0 0 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+
+  .sm a:hover{
+    opacity: 50%;
+  }
+
+
+
+  .disclaimers a, .disclaimers span{
+    line-height: 1.8;
+    font-size: 12px;
+    color: #fff;
+    opacity: 50%;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 3839px){
+    
+    .inner-width{
+      max-width: 3000px;
+    }
+    .bob{
+      width: 20%;
+    }
+    .sites-cont{
+      display: flex !important;
+      justify-content: center !important;
+      align-items: baseline;
+      margin-left: 450px;
+    }
+    .copyright {
+      font-size: 11px;
+    }
+
+  }
+  @media screen and (min-width: 1921px){
+    .navbar {
+      padding: 0 270px;
+    }
+    .logo {
+      width: 500px;
+      height: 95px;
+    }
+    .navbar-menu a, .navbar-menu button{
+      font-size: .8vw;
+    }
+    .sites-cont{
+      padding-left: 0px;
+    }
+    .sites{
+      margin-left: 30px;
+    }
+    .sites a, .sites span{
+      font-size: .7vw;
+    }
+    .footer-pic img{
+      width: 250px;
+    }
+    .goTop {
+      width: 60px;
+      height: 60px;
+    }
+    .fa-arrow-up{
+      font-size: 20px;
+    }
+    .shop-pics{
+      padding: 0;
+      margin: auto;
+    }
+
+    .shop-pics img{
+      width: 300px;
+    }
+    footer .inner-width{
+    padding: 0;
+    }
+    
+  }
+  @media screen and (max-width: 1279px){
+    .inner-width{
+      padding: 0 50px;
+    }
+    .footer-pic{
+      display: none;
+    }
+    .bob{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .sites-cont{
+      padding-left:0px;
+    }
+
+    .sites{
+      margin-right: 25px;
+    }
+
+    .bob{
+      width: 20%;
+    }
+    .sm{
+      position: relative;
+      left:70px
+    }
+
+  }
+  
+  @media screen and (max-width: 980px) {
+    .inner-width {
+      padding: 0 40px !important;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar-menu {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient( #003CA6, #7C9CD4);
+      top: 0;
+      right: -200%;
+      max-width: 465px;
+      padding: 80px 50px;
+      transition: 0.3s linear;
+    }
+  
+    .navbar-menu a, .navbar-menu button {
+      display: block;
+      margin: 15px 0;
+    }
+
+    .navbar-menu.active {
+      right: 0;
+    }
+  
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(-45deg);
+      top: 4px;
+    }
+  
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(45deg);
+      bottom: 14px;
+    }
+  
+    .dropdown {
+      width: 70%;
+    }
+  
+    .dropdown-content
+    {
+      position: relative;
+    }
+    .dropdown-content a
+    {
+      margin-top: -10px;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .inner-width {
+      padding: 0 5px !important;
+    }
+
+    .dropdown-content a {
+      font-size: 14px;
+      padding: 12px 10px;
+    }
+ 
+    .footer-pic{
+      float: none;
+      padding-top: 15px;
+      display: block;
+    }
+
+    .bob{
+      position: relative;
+      left: 100px;
+      width: 100%;
+      display: block;
+    }
+    .dropbtn{
+      font-size: 16px !important;
+    }
+    .sites-cont{
+      padding-left: 1px;
+    }
+
+    .sites-cont span a{
+      font-size: 10px !important;
+    }
+    .sites{
+      margin-right: 10px;
+    }
+
+    .sm {
+      margin: 0 155px 0 0 !important;
+    }
+  }

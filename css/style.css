@@ -1,0 +1,1121 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: rgb(255, 95, 2);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #003CA6;
+}
+
+/*home page*/
+#home {
+  width: 100%;
+  height: 768.8px;
+  background: linear-gradient(to right, #003CA6, #7C9CD4);
+}
+.vidcont{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#videoBG {
+  background-color: #002c54;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  top: 80px;
+  left: 0;
+  width: 100%;
+ 
+}
+@media screen and (min-width: 5119px){
+  #videoBG{
+    width: 90% !important;
+  }
+}
+@media screen and (min-width: 3839px){
+  #videoBG {
+    margin-top: 100px;
+    margin-left: 308px !important;
+    width: 80%;
+    height: auto;
+  }
+}
+@media (min-width: 1921px){
+  #videoBG {
+    margin-top: 100px;
+    margin-left: 250px;
+    width: 80%;
+    height: auto;
+  }
+  #home{
+    height: 70vh;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 1300px){
+  #videoBG {
+    display: none;
+  }
+  #home{
+    background-image: url(../images/Corporate-Banner_Karat-Earth.jpg);
+    width: 100%;
+  }
+  html body{
+    overflow-x: visible;
+  }
+}
+@media (max-width: 940px) {
+  #videoBG {
+    display: none;
+  }
+  #home {
+    background-color: #003CA6 !important;
+    margin-top:-0px;
+    background-image: url(../images/LS_Mobile-Banner_Front-Page_500-x-579.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0;
+  }
+}
+  @media (max-width: 600px) {
+    #home {
+      background-color: #003CA6 !important;
+      margin-top:75px;
+      background-image: url(../images/LS_Mobile-Banner_Front-Page_500-x-579.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-left: 0;
+    }
+}
+section {
+  padding: 25px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 2.4vw;
+  padding-bottom: 20px;
+  color:  #15253d;
+}
+
+.pictures{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: auto;
+  
+}
+
+
+.pictures img {
+  margin: 0px 18px;
+  width:230px;
+  max-width: 230px;
+  max-height: auto;
+  transition: linear 3.3s;
+}
+
+.pictures a{
+    max-width: 230px;
+    margin: 30px;
+}
+
+.pictures a:hover{
+  animation: Grow .5s forwards;
+
+}
+@keyframes Grow{
+	from{
+		transform: scale(1);
+	}to{
+		transform: scale(1.20);
+	}
+}
+
+/*Partners Section*/
+#Our-Partners{
+  padding: 0 150px;
+}
+
+/* Logo Slider */
+
+.partcontain{
+  max-width: 1300px;
+  margin: auto;
+}
+
+.logo-slider {
+	background: white;
+	-webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	margin: auto;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.logo-slider::before, .logo-slider::after {
+	background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 200px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.slide img{
+  width: 200px;
+}
+
+.logo-slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+.logo-slider::before {
+	left: 0;
+	top: 0;
+}
+
+.logo-slider .logo-slide-track {
+	-webkit-animation: logo-scroll 120s linear infinite;
+	animation: logo-scroll 120s linear infinite;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: calc(350px * 30);
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.logo-slider .slide {
+	height: 190px;
+	width: 200px;
+	padding: 20px;
+}
+
+@-webkit-keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+.to-partners{
+  margin-bottom: 50px;
+  margin-top: 20px;
+  text-align: center;
+  
+}
+.to-partners a{
+  color: #fff;
+  background-color: #003CA6;
+  padding: 15px 75px;
+  border-radius: 5px;
+  font-size: .8vw;
+  transition: linear 1.3s;
+}
+
+.to-partners a:hover{
+  text-decoration: underline;
+}
+.to-partners span{
+ position: relative;
+ bottom: 1px;
+}
+
+/*services section*/
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services a:hover{
+  text-decoration: underline;
+}
+
+section.dark {
+background-color: #f1f1f1;
+color: #002c54;
+width: 1208px;
+padding: 0 50px;
+}
+
+section.dark h1{
+  color: white;
+}
+
+.cust-print{
+ line-height: 1.8;
+ color: #002c54;
+ height: 199.2px;
+ 
+}
+
+.cust-print img{
+  position: relative;
+  padding-bottom: 0px;
+  width: 400px;
+  float: right;
+}
+
+.cust-print p, .Training p, .location p{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.cust-print a, .Training a, .location a{
+  color: #fff;
+  background-color: #003CA6;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+#training{
+  width:1208px;
+  padding: 0 0px;
+}
+
+.Training{
+ line-height: 1.8;
+ height: 180.2px;
+ color: #002c54;
+ margin: 0 50px;
+}
+
+.t-container{
+   padding-right: 50px;
+   float: right;
+   margin-left: 140px;
+}
+
+.Training img{
+  position: relative;
+  float: left;
+  width: 400px;
+}
+
+.cust-print span, .location span{
+  color: #003CA6;
+  font-size: 1vw;
+  opacity: 50%;
+  font-weight: 700;
+  position: relative;
+  top: 30px;
+}
+
+.cust-print h3, .Training h3, .location h3{
+  font-size: 1.5vw;
+  margin-top: 30px;
+}
+
+.location{
+ line-height: 1.8;
+ height: 300.4px;
+ color: #002c54;
+}
+
+.location img{
+  float: right;
+  position: relative;
+  top: 5px;
+  width: 400px;
+  left: 20px;
+}
+
+.shop-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.shop-title img{
+  width:20vw;
+}
+
+.shop-pics{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 118px;
+}
+
+.shop-pics a:hover{
+  animation: Grow .5s forwards;
+}
+
+.shop-pics img{
+  border-radius: 25px;
+  width: 230px;
+  height: auto;
+}
+
+.cat-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 65px;
+}
+
+.prod{
+    border: none;
+    color: white;
+    padding: 20px 120px;
+    font-size: 0.77vw;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  .prod:hover{
+    text-decoration: underline;
+  }
+
+  #pr{
+    background-color: #003CA6;
+    padding: 20px 160px;  
+  }
+  
+
+  #eco{
+    background-color: green;
+  }
+
+/* Additional Services and Training Section */
+.container {
+  display: inline-block;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* Contacts section */
+.contact-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  height: 140px;
+  background-color:  #15253d;
+  margin: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  z-index: auto;
+}
+
+.icon {
+  font-size: 1.2vw;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+.card:hover .icon {
+  transform: scale(4);
+  opacity: 0;
+}
+
+.card-content h3,
+.card-content a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  opacity: 0;
+}
+
+.card-content h3 {
+  top: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+.card-content a {
+  bottom: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.card:hover h3 {
+  opacity: 1;
+  top: 46px;
+  transition: 0.3s linear 0.3s;
+}
+
+.card:hover a {
+  opacity: 1;
+  bottom: 46px;
+  transition: 0.3s linear 0.3s;
+}
+
+.card a:hover{
+  text-decoration: underline;
+}
+
+
+/* contact stylesheet for contact forms. The Stylesheet is added here so multiple pages can access the single segment of CSS. works on all conatct forms.*/
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea,
+.btn {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background-color: #15253d;
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.nameZone,
+.emailZone {
+  max-width: calc(50% - 10px);
+}
+
+.messageZone {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.contact-form span{
+  color: #002c54;
+  font-weight: 500;
+  font-size: 1.8vw;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.contact-form .btn {
+  width: 180px;
+  background-color: transparent;
+  color: #15253d;
+  font-size: 1.8vw;
+  border: 2px solid #15253d;
+  padding: 0;
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.contact-form .btn:hover {
+  background-color: #15253d;
+  color: #fff;
+}
+
+/*Ultra-wide-screen Conversion*/
+@media screen and (min-width: 5119px){
+  .cust-print h3, .Training h3, .location h3{
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .cust-print span, .location span{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+/*wide-screen Conversion*/
+@media screen and (min-width: 1921px){
+  .inner-width{
+    max-width: 1950px;
+  }
+  .scrolldown {
+    margin-bottom: 400px;
+  }
+
+  .pictures{
+    max-width: 1500px;
+    margin:20px;
+  }
+  .pictures img {
+    width: 300px;
+    max-width: 350px;
+    max-height: auto;
+  }
+  .pictures a{
+      width: 270px;
+  }
+ 
+  .partcontain{
+    max-width: 1800px;
+    margin: auto;
+  }
+  
+  .cust-print{
+    margin: 0px;
+    padding: 0 50px;
+  }
+  .cust-print{
+    height: 0vh;
+   }
+  .cust-print img{
+    position: relative;
+    width: 500px;
+    float: right;
+    top: 0px;
+  }
+  .services{
+    max-width: 1500px;
+    margin: auto;
+  }
+  .cust-print img{
+    bottom: 30px;
+  }
+
+  .t-container{
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+  .Training{
+    margin: 0;
+    padding: 0 45px; 
+  }
+
+  .Training img{
+    width: 450px;
+    margin-top: 0px;
+  }
+  #training{
+    width: 1500px;
+  }
+
+  .location{
+  margin: 0;
+  padding: 0 40px;
+  height: 200px;
+  }
+
+  .location img{
+    position: relative;
+    right: 50px;
+    width: 450px;
+  }
+  
+  .shop-pics{
+    width: 1450px;
+  }
+
+  section.dark{
+    height: 359px;
+    width: 1500px;
+  }
+
+  .location span {
+    position: relative;
+    right: 0px;
+  }
+  .cust-print p, .Training p, .location p{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .cat-links{
+    margin-right: 30px;
+  }
+  
+}
+
+/*Ultra half conversion*/
+@media screen and (max-width: 1279px){
+  .to-partners a{
+    font-size: 18px;
+  }
+  #pr{
+    font-size: 20px;
+  }
+  #eco{
+    font-size: 20px;
+    padding: 20px 140px;
+  }
+}
+
+/* Tablet conversion */
+@media screen and (max-width: 1000px) {
+  .inner-width {
+    max-width: 900px;
+    padding: 0 0 !important;
+  }
+
+  .section-title {
+    flex: 100%;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  #home .content h1 {
+    font-size:60px;
+  }
+
+  .about-content {
+    margin: 0 !important;
+    align-items: center;
+    padding: 0;
+  }
+
+  .pictures {
+    flex: 100%;
+  }
+
+  .pictures img{
+    width: 165px;
+    margin: 0px;
+  }
+  
+  .pictures a{
+      width: 165px;
+      margin: 10px;
+  }
+  .to-partners a{
+    font-size: 16px;
+  }
+
+  .t-container{
+    margin: 0 0 0 0px !important;
+  }
+
+  .shop-pics img{
+    width: 165px;
+    margin: 10px;
+  }
+
+  .org {
+    max-width: 525px;
+  }
+  .orgpic {
+    max-width: 400px;
+  }
+
+  .about-text {
+    flex: 100%;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .service-dis {
+    flex: 100%;
+    text-align: center;
+  }
+  
+  .service-dis h3 {
+    font-size: 2.3vw;
+  }
+
+  .content p {
+    max-width: 300px;
+  }
+
+  .card {
+    flex: 100%;
+    max-width: 500px;
+  }
+  .prod{
+    font-size: 16px;
+  }
+  #eco{
+    padding: 20px 144px;
+  }
+  .icon {
+    font-size: 34px;
+  }
+  
+}
+
+/* 750px Conversion */
+@media screen and (max-width: 880px){
+  .Training{
+    margin: 0 0px;
+  }
+  
+  .pictures{
+      width: 550px;
+}
+
+    .pictures img {
+        width: 265px;
+    }
+    .pictures a {
+        width: 265px;
+        margin: 0;
+    }
+    .t-container{
+        padding-right: 0;
+    }
+
+
+/* Mobile Conversion */
+@media screen and (max-width: 600px) {
+  
+  html body{
+  overflow-x: hidden;
+}
+html{
+  max-width: 600px;
+}
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #d03228;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .serv-list{
+    flex: 100%;
+    padding: 100px;
+  }
+
+  .icon-container i{
+    margin-left: 0px;
+  }
+  .hist-cont img{
+    width: 500px;
+    margin-right: 14px;
+    }
+    
+    #img1 {display: none;}
+    #img2 {display: block;}
+
+  .icon-container{
+    margin-bottom: 100px;
+  }
+
+.logo-slider .slide {
+  height: 100px;
+	width: 100px;
+	padding: 0px;
+}
+
+.slide img{
+  width: 100px;
+}
+
+.prod{
+  text-align: center;
+  margin: 0;
+}
+
+#pr{
+  margin-bottom: 50px;
+}
+
+.cat-links{
+  margin-right: 5px;
+}
+
+  .nameZone,
+  .emailZone {
+    max-width: 100%;
+  }
+  .karat-insider{
+    margin-top: 50px;
+  }
+
+  #aboutT {
+    padding-top: 0em;
+  }
+
+  .brand{
+    max-width: 500px;
+    padding: 0px 0px;
+  }
+  .brandpix{
+    flex-wrap: wrap;
+  }
+
+  .brandpix img{
+    max-width: 490px;
+  }
+  
+  .brandtxt{
+    margin-left: 0px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+ 
+  .brandsubtxt p{
+    width: 400px;
+    font-size: 16px !important;
+  }
+
+  .brandsubtxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: fit-content;
+    margin: 0 50px;
+  }
+
+  .sheets{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sheets a, .sheets span, .sheets li {
+    font-size: 16px;
+  }
+
+  .prod-txt h4{
+    margin-top: -100px;
+    font-size: 34px;
+  }
+
+  .prod-txt img{
+   width: 100px;
+  }
+
+  .prod-txt span{
+    font-size: 14px;
+   }
+
+  #partpix{
+    margin-top: 20px;
+  }
+
+  .reach img{
+    max-width: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .colu{
+    justify-content: center;
+}
+
+  .you-con{
+    max-width: 300px;
+    margin: 20px 0px;
+    }
+
+    #partner-vids iframe{
+      width: 200px;
+    }
+
+  .bpi img{
+  margin-top: 20px;    
+  }
+
+  #bpi-certs{
+  padding: 10px 100px !important;    
+  }
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  }
+
+.filterDiv {
+  line-height: 1.8;
+  text-align: center;
+  margin: 20px;
+  display: none;
+
+}
+.karat-insider{
+  margin:0;
+  margin-top: 50px;
+}
+
+.inner-width{
+  max-width: 600px;
+  padding: 0 5px !important;
+}
+
+#Our-Partners{
+  padding: 0 0px;
+}
+
+.cust-print, .location, .Training{
+  text-align: center;
+}
+
+.cust-print h3, .location h3, .Training h3{
+  font-size: 50px;
+}
+
+.cust-print p, .location p, .Training p{
+  font-size: 20px;
+}
+
+.cust-print span, .location span, .Training span{
+  font-size: 20px;
+}
+
+.location span{
+  margin-bottom: 20px;
+}
+.cust-print a, .location a, .Training a{
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.cust-print span, .location span{
+  display: none;
+}
+
+.cust-print{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: auto;
+}
+
+.cust-print img{
+  position: relative;
+  top: 10px;
+}
+
+.cust-print img, .Training img, .location img{
+  float: none;
+  width: 80%;
+}
+
+.Training{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: auto;
+}
+
+.t-container{
+  float: none;
+  margin-right: 50px;
+  margin-bottom: 25px !important;
+  padding-right: 0 !important;
+}
+
+.location{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: auto;
+}
+
+.location img{
+  position: relative;
+}
+
+.shop-title img{
+  width: 449px;
+}
+
+.shop-pics{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.part-logo img, .part-logo-t img{
+  display: none;
+}
+
+.part-disc{
+  max-width: 300px;
+  padding: 0 40px;
+  position: relative;
+  right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.part-disc a{
+  position: relative;
+  left: 24px;
+}
+.dl-cat a{
+  font-size: 20px!important;
+}
+
+}
+
